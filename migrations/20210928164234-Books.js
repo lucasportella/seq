@@ -25,6 +25,11 @@ module.exports = {
         allowNull: false,
         type: DataTypes.DATE,
       },
+      updatedAt: {
+        allowNull: false,
+        type: DataTypes.DATE,
+        defaultValue: new Date()
+      },
     });
   },
 

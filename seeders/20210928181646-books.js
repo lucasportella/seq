@@ -7,12 +7,12 @@ module.exports = {
         title: 'O Senhor dos Aneis',
         author: 'Tolkien',
         pageQuantity: 966,
-        createdAt: new Date(),
+        createdAt: Sequelize.literal('CURRENT_TIMESTAMP'),
       },
       {
         title: 'Harry Potter',
         author: 'JK Rowling',
-        createdAt: new Date(),
+        createdAt: Sequelize.literal('CURRENT_TIMESTAMP'),
       }
     ], {});
   },
